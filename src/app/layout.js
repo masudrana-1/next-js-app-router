@@ -12,13 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header>
-          <h1 className='text-center mb-5'>Header</h1>
-        </header>
-        {children}
-        <footer>
-          <h1 className='text-center mt-5'>Footer</h1>
-        </footer>
+        <div className='min-h-screen'>
+          {children}
+        </div>
         </body>
     </html>
   )
